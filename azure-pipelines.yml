@@ -9,7 +9,7 @@ trigger:
 - bugfix/*
 
 pool:
-  vmImage: 'VS2019-Win2016'
+  vmImage: 'windows-2019'
 
 variables:
   buildConfiguration: 'Release'
