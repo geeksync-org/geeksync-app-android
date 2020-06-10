@@ -9,7 +9,7 @@ trigger:
 - bugfix/*
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'VS2019-Win2016'
 
 variables:
   buildConfiguration: 'Release'
