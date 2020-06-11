@@ -50,13 +50,22 @@ stages:
         name: SetMasterBuildName
         
 - stage: Build
-  displayName: Build & package
+  displayName: "Build & package"
   condition: always()
   jobs:  
   - job: Build
-    displayName: Build, test and publish
-    steps:   
+    displayName: "Build, test and publish"
+    steps:
+      - task: NuGetToolInstaller@0
+        displayName: NuGet Install
+
+      - task: NuGetCommand@2
+        displayName: NuGet Restore
+        inputs:
+          restoreSolution: '**/*.sln'
+
       - task: XamarinAndroid@1
+        displayName: Build
         inputs:
           projectFile: '**/*.csproj'
           jdkOption: 'JDKVersion'
