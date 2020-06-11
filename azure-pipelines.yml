@@ -62,7 +62,10 @@ stages:
       - task: NuGetCommand@2
         displayName: NuGet Restore
         inputs:
+          command: 'restore'
           restoreSolution: '**/*.sln'
+          feedsToUse: 'config'
+          nugetConfigPath: 'nuget.config'
 
       - task: XamarinAndroid@1
         displayName: Build
