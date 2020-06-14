@@ -21,7 +21,7 @@ namespace geeksync_app_android
     {
         List<SenderClient> senders = new List<SenderClient>();
         ConfigManager confMan;
-        ReceiverClient rc;
+        //ReceiverClient rc;
 
         int cnt = 1;
 
