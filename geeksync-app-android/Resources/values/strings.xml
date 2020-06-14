@@ -2,4 +2,9 @@
 <resources>
     <string name="app_name">geeksync_app_android</string>
     <string name="action_settings">Settings</string>
+    <string name="action_home">Home</string>
+
+
+    <string name="action_settings_save">Save</string>
+    <string name="action_settings_discard">Discard</string>
 </resources>
