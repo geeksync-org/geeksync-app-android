@@ -75,6 +75,7 @@ stages:
         inputs:
           projectFile: '**/*.csproj'
           outputDirectory: '$(Build.ArtifactStagingDirectory)/app'
+          msbuildVersionOption: 'latest'
           jdkOption: 'JDKVersion'
       
       - task: PublishBuildArtifacts@1
